@@ -1,6 +1,6 @@
 # 308 REEDPIPES
 The ambient air quality monitoring in France is ensured by independent associations, members of the ATMO federation, and, on behalf of the State and public authorities, are responsible for implementing means of monitoring.
-Why not we? The Lozère market seems easily open for the taking. . .
+Why not us? The Lozère market seems easily open for the taking. . .
 So, we decide to start a project based on collaborative initiatives like CitoyensCapteurs in order to acquire data. All that’s left to do is to create a little software for viewing the data. . .
 We receive the data in triplets (x, y, p) where x and y are the coordinates (presumably integers so it’s sim- pler) on a normal grid and p the pollution level (in percentage). We will consider that the pollution is non- existent on the grid’s other points.
 Our program will use Bézier surfaces to smooth out the data and display the value of the pollution level in a point inside the observed area.

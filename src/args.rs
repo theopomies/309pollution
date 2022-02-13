@@ -5,7 +5,6 @@ pub enum Commands {
     Help,
 }
 
-#[derive(Debug)]
 pub struct Arguments {
     pub n: u32,
     pub file: String,

@@ -1,6 +1,7 @@
 use std::process::exit;
 
 mod args;
+mod binomial;
 mod table;
 
 use args::{Arguments, Commands};
@@ -37,6 +38,8 @@ fn main() {
 }
 
 fn program(arguments: Arguments) -> Result<(), String> {
-    let mut table = Table::try_from_csv_file(arguments.file)?;
+    let table = Table::try_from_csv_file(arguments.file)?;
+    let result = table.apply_algo(arguments.n, arguments.x, arguments.y);
+    println!("{:.2}", result);
     Ok(())
 }
